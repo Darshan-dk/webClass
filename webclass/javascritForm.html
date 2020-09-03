@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+    <script>
+        console.log("welcome")
+        function register(){
+           console.log("welcome function")
+           var name=document.getElementById("name").value
+           console.log(name)
+
+           console.log(name.length)
+           if(name.length==""){
+               document.getElementById("ename").innerHTML="pleace enter the value";
+               document.getElementById("ename").style.color="red"
+               document.getElementById("ename").style.fontSize="30px"
+           }
+           
+           var password=document.getElementById("pwd").value
+           var errorpwd=document.getElementById("epwd")
+           var egender=document.getElementById("egen")
+           var ecity=document.getElementById("ecity")
+          //for validation of array type or predifined values we need follo anothe type of validation
+          //docoment.formname.controlname.value
+
+          console.log(document.registrationform.gender[0].checked)
+          console.log(document.registrationform.gender[1].checked)
+
+
+          if(document.registrationform.gender[0].checked==false&&
+          document.registrationform.gender[1].checked==false)
+          {
+                egender.innerHTML="please select the gender"
+                egender.style.color="red"
+          }
+          if (document.registrationform.city.value==0){
+            ecity.innerHTML="please select the city"
+
+          }
+          var regexEmail = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
+            var email = document.getElementById("email");
+            var eemail=document.getElementById("eemail")
+
+            if (regexEmail.test(email.value)) {
+             
+            } else {
+                eemail.innerHTML="please enter the valid email"
+
+                }
+
+
+           console.log(password)
+           if(password.length==""){
+               document.getElementById("epwd").innerHTML="pleace enter the password";
+               document.getElementById("epwd").style.color="red"
+               document.getElementById("epwd").style.fontSize="30px"
+           }
+               else if( password.length<4){
+                errorpwd.innerHTML="password is weak"
+               }
+    
+    
+           
+        }
+        function mouseover(){
+            document.getElementById("over").innerHTML="function is calling"
+
+        }
+        function change(){
+            console.log("on change calling")
+            var a=document.getElementById("a").value
+        //    document.getElementById("d").innerHTML=a.toUpperCase();
+           document.getElementById("a").value=a.toUpperCase();
+            
+        }
+        (function(){
+            console.log("invoke function")
+        } )();
+        function bluri(){
+            console.log("calling the on blur function")
+            var g=document.getElementById("x").value
+            console.log(g)
+            if(g==""){
+                document.getElementById("v").innerHTML="wrong input"
+            }
+            
+            
+        }
+        function blurn(){
+            var name=document.getElementById("name").value
+           console.log(name)
+
+           console.log(name.length)
+           if(name.length==""){
+               document.getElementById("ename").innerHTML="pleace enter the value";
+               document.getElementById("ename").style.color="red"
+               document.getElementById("ename").style.fontSize="30px"
+           }
+            
+            
+        }
+        //array
+        var b=[]
+        var a =[23,"java",12.36]
+        console.log(a)
+
+        for(var i=0;i<a.length;i++)
+        console.log(a[i])
+
+        a.push("mango")
+        console.log(a)
+        // adding the element at begining
+
+        a.unshift("php")
+        console.log(a)
+        // deleting the last element
+        a.pop()
+        console.log(a)
+      // removing the first element
+        a.shift()
+        console.log(a)
+
+
+        a.push(25)
+        a.push(89)
+        console.log(a)
+        //removing the perticular element
+        a.splice(2)
+        console.log(a)//removing the all the elements from index two
+
+        a.splice(1,2)//removin the  2 element from index 1 
+        console.log(a)
+        a.push(25)
+        a.push(89)
+
+        a.splice(1,0,"Darshan")
+        console.log(a)
+
+        //sorting
+
+        a.sort()
+        console.log(a)
+
+        a.sort(mysort)
+
+        function mysort(a,b){
+            return b-a
+        }
+        console.log(a)
+        //creating the object
+
+        var d ={firstName:"darshan",age:24}
+        console.log(d)
+
+        console.log(d.firstName)
+        console.log(d["firstName"])
+
+        delete d.firstName
+        console.log(d)
+
+
+
+        var s=new Object()
+        s.firstName="honey"
+        console.log(s)
+
+        //constant and let
+
+        const ab=10
+        console.log(ab)
+        // const ab=7   costant cannot change
+
+        // using let key word we cannot declaRE multiple times
+
+        let e=10
+
+        //function
+
+        function Employe(name,id){
+            this.id=id
+            this.name=name
+        }
+
+        var a1=new Employe("archana",007)
+        console.log(a1)
+
+        //math function
+
+        console.log(Math.exp(10))
+        console.log(Math.pow(10,5))
+
+        //local storage--its apemenent storage until browser histrory will delete
+        localStorage.setItem("local","darshan")
+        localStorage.setItem("storage","dee")
+       console.log( localStorage.getItem("local"))
+       localStorage.clear()//removing the single element
+       localStorage.removeItem("storage")
+
+
+       //session storage
+       sessionStorage.setItem("session","storage")
+       sessionStorage.clear()
+       sessionStorage.removeItem("session")
+
+       //lamda function
+
+       var a2 = (a,b)=>(a*b)
+       console.log(a2(2,5))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    <form name="registrationform">
+       
+        
+
+        <label>enter your password</label>
+        <input type="password" id="pwd">
+        <span id="epwd"></span>
+       
+    </div>
+   
+    <div>
+        <label>select the gender</label>
+        <input type="radio" name="gender" value="male">male
+        <input type="radio" name="gender" value="female">female
+        <span id="egen"></span>
+    </div>
+    
+    <div>
+        <label >city</label>
+        <select name="city" id="city">
+        <option value="0">----select----</option>
+        <option>Bangalore</option>
+        <option>Mangalore</option>
+        <option>Chennai</option>
+    </select>
+        <span id="ecity"></span>
+    </div>
+    <label> Enter the the email ID</label>
+    <input type="email" id="email" placeholder="abc@mail.com">
+    <span id="eemail"></span>
+
+
+
+
+
+
+
+    <div>
+        <button type="button" onclick="register()">submit</button>
+    </div>
+    <div>
+        <button id="over" onmouseover="mouseover()">mouseover</button>
+    </div>
+    OnChange : <input type="text" onchange="change()" id="a">
+    <span id="d"></span>
+
+    OnBlur : <input type="text" onblur="bluri()" id="x">
+    <span id="v"></span>
+
+
+
+    <div>
+        <label>enter your name</label>
+        <input type="text" onblur="blurn()" id="name">
+        <span id="ename"></span>
+       
+    </div>
+   
+
+
+    </form>
+
+
+    
+
+    
+</body>
+</html>

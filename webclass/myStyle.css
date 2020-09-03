@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background-color: white; */
+    background-image: linear-gradient(to right, rgb(72, 219, 146) , rgb(76, 128, 177));
+}
+nav{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(83, 83, 92);
+}
+ul{
+    width: 150px;
+    height: 500px;
+    /* background-color: #eee; */
+    
+}
+
+ul li{
+    list-style: none;
+    
+    line-height: 50px;
+    
+}
+ul li a {
+    display: block;
+    text-decoration:none;
+    color:black;
+    padding: 0 30px;
+    
+    
+}
+#id  {
+    float: right;
+ }
+
+a:hover{
+    text-decoration: underline;
+    background-color: gray;
+}
+h2{
+   
+        color: white;
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+     
+    text-align: left;
+    font-style:italic ;
+    font-size: 20px;
+    font-size: 350%;
+    height: 65px;
+}
+h2 p{
+    display: inline-block;
+   
+    font-size: 50%;
+}
+ol li a{
+    display: block;
+    text-decoration:none;
+    color:white;
+    padding: 0 30px;
+    
+    
+
+}
+ol li{
+    display: inline-block;
+    line-height: 50px;
+}
+
+.pagination {
+  padding-left: 350px;
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  align-content: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: #645d7e;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My web page</title>
+    <style>
+        body {
+            margin: 0%;
+            font-family: Arial;
+            padding: 0;
+            background: #f1f1f1;
+            }
+        .header{
+            color: #1f1f1f;
+            padding: 0px;
+            text-align: center;
+            margin: 0%;
+        }
+        .menu{
+            background-color: rgb(119, 112, 112);
+            overflow: hidden;
+        }
+        .menu a{
+            float: left;
+            padding: 14px 16px;
+            color: #f2f2f2;
+            display: block;
+        }
+        .leftcol{
+            float: left;
+            width: 70%;
+        }
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+        .img {
+            background-color: rgb(223, 219, 219);
+            width: 100%;
+            
+        }
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+      
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        <h1>My Responsive web page</h1>
+    </div>
+    <div class="menu">
+        <a href="#">link1</a>
+        <a href="#">link2</a>
+        <a href="#">link3</a>
+        <a href="#">link4</a>
+        <a href="#">link5</a>
+        <a href="#" style="float: right;">link6</a>
+
+    </div>
+    <div class="row">
+        <div class="leftcol">
+            <div class="card">
+            <h2>heading</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <img src="mountain.jpg" alt="Mountains" width=50% >
+            <p>Some text..</p>
+            <p>random text</p>
+    </div>
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <img src="mountain.jpg" alt="Mountains" width=60% >
+      <p>Some text..</p>
+      <p>random text.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <img src="profile.png" alt="me">
+      <p>Some text about me .</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+    
+      <img src="mountain.jpg" alt="Mountains" width=100% >
+      <img src="mountain.jpg" alt="Mountains" width=100% >
+      <img src="mountain.jpg" alt="Mountains" width=100% >
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

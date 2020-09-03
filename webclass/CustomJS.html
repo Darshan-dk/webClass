@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>custom JS</title>
+    <style>
+        body {
+          background-image: url("login1.png");
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+        
+        </style>
+    <script type="text/javascript" src="customJs2.js"></script>
+</head>
+<body>
+    <form name="registrationform">
+        <table>
+        <div>
+            <tr>
+               <td><label style="color: whitesmoke;">enter your name</label></td> 
+               <td> <input type="text" onblur="blurName()" id="name"></td>
+               <td> <span id="ename"></span></td>
+            </tr>
+           
+        </div>
+            <tr>
+                
+        <td><label style="color: whitesmoke;">enter your password</label></td>
+       <td> <input type="password" onblur="blurpassword()" id="pwd"></td>
+        <td><span id="epwd"></span></td>
+            </tr>
+     
+    <div>
+       <tr>
+       <td >   <label style="color: whitesmoke;">select the gender</label></td>
+        <td style="color: whitesmoke;"><input  onblur="blurgender()" type="radio" name="gender" value="male" >male </td>
+        <td style="color: whitesmoke;" ><input onblur="blurgender()" type="radio" name="gender" value="female">female</td>
+        <td><span id="egen"></span></td>
+       </tr>
+    </div>
+    
+    <div>
+        <tr>
+           <td> <label  style="color: whitesmoke;"> Select city</label></td>
+           <td> <select name="city" onblur="blurcity()" id="city">
+                <option value="0">----select----</option>
+                <option>Bangalore</option>
+                <option>Mangalore</option>
+                <option>Chennai</option>
+            </select></td>
+        <td><span id="ecity"></span></td>
+        </tr>
+    </div>
+    <div>
+        <tr>
+           <td> <label style="color: whitesmoke;"> Enter the the email ID</label></td>
+          <td>  <input type="Email" id="email" onblur="bluremail()" placeholder="abc@mail.com"></td>
+           <td> <span id="eemail"></span></tr></td>
+    </div>
+    <div>
+      <tr> <td> <button type="submit"   >submit</button></td> </tr>
+  
+    </div>
+
+</table>
+    </form>
+
+    
+</body>
+</html>

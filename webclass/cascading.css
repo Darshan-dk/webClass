@@ -1,0 +1,52 @@
+h1{
+    color:blue;
+    text-transform: uppercase ;
+    text-decoration : underline;
+    text-align: center;
+    font-style: italic;
+}
+.classlink{
+    color:rgb(0, 255, 34);
+    text-transform: uppercase ;
+    text-decoration : underline;
+    text-align: center;
+    font-style: italic;
+}
+#id{
+    color:rgb(251, 255, 0);
+    text-transform: uppercase ;
+    text-decoration : underline;
+    text-align: center;
+    font-style: italic;
+}
+#box{
+    padding: 10px;
+    border: 2px solid green;
+    margin: 10px;
+
+}
+#box1{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+    float: left;
+
+   
+}
+#box2 {
+    float: right;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border : 5px solid gray;
+    margin: 0;
+
+   
+}
+div~p{
+    color:red
+}

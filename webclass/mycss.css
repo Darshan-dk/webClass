@@ -1,0 +1,115 @@
+CSS-> cascading style sheet
+
+different way to write css
+1.internal css
+<style>
+  selector{
+      property:value;
+       
+  }
+  </style>
+
+  type of link
+  1. internal css
+  2. external css
+  3. inline css
+
+  selector type
+  !.element selector
+  div
+  h1
+  2.group selector
+
+  div,h1{
+    property:value;
+  }
+
+  3.class selector
+  class= classname
+  .className
+{
+  property:value;
+
+  }
+
+  4.id selector   id selector take priority over the class selector.
+  id ="idname"
+  #idname{
+    property:value;
+
+  }
+
+  CSS BOX MODEL
+  MARGIN
+  BORDER
+  CONTENT
+  PADDING
+
+  PADDING=LEFT RIGHT UNDER TOP
+  EX: padding:10px
+
+  CSS COMBINATOR:
+  1.Descendant combinator
+
+  div p{
+    color:red;
+  }
+
+  2.child selector
+  div>p{
+    color:red;
+  }
+
+  3.adjacent sibling selector
+  div+p{
+    color:red;
+  }
+
+  4 .genral selector
+  div~p{
+    color:red;
+  }
+/* Types of CSS or how many ways to write CSS:
+  1.Internal CSS
+       <style>
+         selector{
+             property : value;
+         }
+         </style>
+  
+  2.External Css 
+   Save css content in external file with extension .css
+   Provider linking to html with tag called link
+  
+  3.Inline CSS
+         We write in html tag itself
+  
+  
+   Selector :
+   Different Selector
+  
+  Selector types:
+  1.Element type 
+     h1 
+     div
+  
+  2. Grouping Selector
+     div,h1 {
+         propert :value;
+     }
+      
+  3. Class Selector
+    class="classname"
+    .classname{
+        propery:value;
+    }
+  
+   4. Id Selector
+     id="idname"
+     #idname{
+         property : value;
+     }
+  
+     Out of element , class , id type selector id has highest priorty 
+     id, class , element type
+   */
